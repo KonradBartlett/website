@@ -1,75 +1,87 @@
 .resume{
     display:grid;
     place-items:center;
-}
 
-.card{
-    box-shadow: 4px 14px 18px 0 rgba(0, 0, 0, 0.5 );
-    transition: 0.3s;
-    size: 7in 9.25in;
-    padding: 16mm 16mm;
-    margin: 3em;
-    margin-top: 8em;
-    background: white;
-    color: black;
-}
-
-.cv{
-    width: 1110px;
-}
-
-.resume h3{
-    margin-top: 2em;
-    font-weight:900;
-}
-
-.resume h4{
-    margin-bottom: 0.5em;
-    font-weight:600;
-}
-
-.resume ul {
-  list-style-type: circle;
-}
-
-.resume ul li{
-    list-style-position: outside;
-    margin-left: 1em;
-}
-
-.resume_button{
-    margin-bottom: 2em;
-}
-
-.top{
-    display: grid;
-    details{
-        width: 60%;
-        margin: 0 0 2em 0;
-    }
-}
-
-.middle{
-    display: grid;
-    grid-template-columns: 0.2fr 1fr;
-
-    h2{
-        text-align: right;
-        padding-right: 2em;
+    hr{
+        border: 2px solid var(--border-color);
+        margin-bottom: 4em;
     }
 
-    .educationHeader{
+    .cv{
+        // width: 1110px;
+    }
+
+    h3{
+        margin-top: 2em;
+        font-weight:900;
+    }
+
+    h4{
+        margin-bottom: 0.5em;
+        font-weight:600;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    ul li{
+        list-style-position: outside;
+        margin-left: 1em;
+    }
+
+    details > p{
+        border-left: 2px solid var(--border-color);
+        padding-left: 2em;
+
+    }
+
+    .resume_button{
+        background: white;
+        margin-bottom: 2em;
+        padding: 1em 2em;
+        border-radius: 9px;
+        border: 2px solid var(--border-color);
+    }
+
+    .header {
         display: flex;
-        align-content: flex-start;
-        flex-direction: row;
         justify-content: space-between;
     }
-    margin: 2em 0;
-}
 
-.bottom{
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // gap: 1rem;
-    // margin: 2em 0;
+    .top{
+        display: grid;
+        details{
+            margin: 0 0 2em 0;
+            width: 60ch;
+        }
+    }
+
+    .middle{
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+
+        h2{
+            text-align: right;
+            padding-right: 2em;
+        }
+
+        .educationHeader{
+            display: flex;
+            align-content: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        margin: 2em 0;
+    }
+
+    .bottom{
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // gap: 1rem;
+        // margin: 2em 0;
+        li{
+            width: 60ch;
+        }
+    }
 }
