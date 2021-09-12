@@ -21,7 +21,7 @@ body {
   background: var(--bg-modal) !important;
   text-align: center;
   width: 20vw;
-  height: 11vh;
+  height: 15vh;
   margin: auto;
   border-radius: 9px !important;
 
@@ -148,6 +148,7 @@ img {
 }
 
 nav > ul > li.nav-item.has-dropdown > a {
+  transform: scaleX(-1);
   position: inherit;
   font-size: 30px;
   height: 96px;
@@ -194,7 +195,7 @@ nav > ul > li.nav-item.has-dropdown > a {
 
 .background {
   position: fixed;
-  bottom: -3px;
+  bottom: -4px;
   width: 100vw;
   min-width: 1000px;
   z-index: -1;
@@ -234,7 +235,7 @@ nav > ul > li.nav-item.has-dropdown > a {
 }
 
 .card{
-  box-shadow: 4px 14px 18px 0 rgba(0, 0, 0, 0.5 );
+  box-shadow: 4px 14px 18px 5px rgba(0, 0, 0, 0.5 );
   transition: 0.3s;
   size: 7in 9.25in;
   padding: 16mm 16mm;
@@ -256,7 +257,7 @@ nav > ul > li.nav-item.has-dropdown > a {
   --blue: #0084a5;
   --purple: #a82dd1;
   --yellow: #fff565;
-
+  --sun: #d2d3cd;
   
 }
 
@@ -269,7 +270,7 @@ nav > ul > li.nav-item.has-dropdown > a {
   --border-color: var(--gray2);
   --bg-solar: var(--yellow);
   --bg-header: var(--gray2);
-  --skyline1: #d8d8da;
+  --skyline1: #cdcdd3;
   --skyline2: #b2b3b6;
   --skyline3: #8d8f93;
   --skyline4: #6a6d72;
@@ -359,4 +360,17 @@ nav > ul > li.nav-item.has-dropdown > a {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gray4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gray5);
 }
