@@ -1,0 +1,28 @@
+.randomFact{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--border-color);
+    border-radius: 9px;
+    padding: 2em;
+    .fact{
+        display: flex;
+        align-items: center;
+        max-width: 60ch;
+        height: 3.5em;
+        border-left: 2px solid var(--border-color);
+        padding-left: 1em;
+        margin: 0 1em;
+    }
+    .fact_button {
+        background: var(--bg);
+        color: var(--text);
+        padding: 1em 2em;
+        border-radius: 9px;
+        border: 2px solid var(--border-color);
+        cursor: pointer;
+        margin-right: auto;
+    }
+    svg{
+        width: 40px;
+    }
+}
