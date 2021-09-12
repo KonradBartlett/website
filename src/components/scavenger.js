@@ -16,6 +16,7 @@ export const ScavengerButton = (props) => {
         
     useEffect(() => {
 
+      var interval1, interval2, colourInverval = '';
     // set movement mode
     if(props.mode == 'fade'){
         const fadePosition = () => {
@@ -23,7 +24,7 @@ export const ScavengerButton = (props) => {
             setTop(`${Math.floor(Math.random() *  90 + 5)}vh`);
         }
         fadePosition();
-        setInterval(fadePosition, 4000);
+        interval1 = setInterval(fadePosition, 4000);
     } else if(props.mode == 'avoid'){
          
           var mouseX;
@@ -88,7 +89,7 @@ export const ScavengerButton = (props) => {
           }
       
           avoidMouse();
-          setInterval(avoidMouse, 2);
+          interval1 = setInterval(avoidMouse, 2);
         } else if(props.mode == 'bounce'){
           
           const changeColour = () => {
@@ -97,8 +98,8 @@ export const ScavengerButton = (props) => {
           }
       
           changeColour();
-          setInterval(changeColour, 12500);
-          setInterval(changeColour, 9000);
+          interval1 = setInterval(changeColour, 12500);
+          interval2 = setInterval(changeColour, 9000);
         }
 
     // set colour of icon
@@ -141,8 +142,14 @@ export const ScavengerButton = (props) => {
           };
     
           setRandomColour();
-          setInterval(setRandomColour, 500);
+          colourInverval = setInterval(setRandomColour, 500);
         }
+      }
+
+      return () => {
+        clearInterval(interval1);
+        clearInterval(interval2);
+        clearInterval(colourInverval);
       }
     },[])
         
