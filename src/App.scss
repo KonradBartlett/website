@@ -21,22 +21,19 @@ body {
   background: var(--bg-modal) !important;
   text-align: center;
   width: 20vw;
-  height: 8vh;
+  height: 11vh;
   margin: auto;
+  border-radius: 9px !important;
 
   button {
     background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
     background-color: #77b55a;
-    border-radius: 4px;
+    border-radius: 9px;
     border: 1px solid #4b8f29;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     padding: 1em 3em;
-    transition: 0.15s ease-out;
-  }
-  button:hover {
-    filter: brightness(0.6);
   }
 }
 
@@ -84,6 +81,8 @@ img {
 
 .navbar {
   position: fixed;
+  display: flex;
+  justify-content: center;
   height: 6em;
   width: 100vw;
   background: var(--bg-nav);
@@ -98,7 +97,7 @@ img {
   z-index: 2;
   align-items: center;
   height: 6em;
-  padding: 0 30rem;
+  width: 70%;
 }
 
 .navbar-nav > h2 {
@@ -123,10 +122,6 @@ img {
   background: var(--bg-nav);
   border-radius: 10px;
   z-index: 1;
-}
-
-.nav-item:hover {
-  filter: brightness(0.9);
 }
 
 .dropdown {
@@ -154,8 +149,9 @@ img {
 
 nav > ul > li.nav-item.has-dropdown > a {
   position: inherit;
-  width: 6em;
-  height: 6em;
+  font-size: 30px;
+  height: 96px;
+  width: 96px;
   display: grid;
   place-items: center;
   text-align: center;
@@ -193,18 +189,19 @@ nav > ul > li.nav-item.has-dropdown > a {
 .veritcal-row {
   background: var(--border-color);
   height: 100%;
-  width: 1px;
+  width: 2px;
 }
 
 .background {
   position: fixed;
-  bottom: 0;
+  bottom: -3px;
   width: 100vw;
   min-width: 1000px;
   z-index: -1;
 }
 
 .page {
+  padding: 6em;
   display: grid;
   place-items: center;
 }
@@ -226,13 +223,24 @@ nav > ul > li.nav-item.has-dropdown > a {
   svg {
     margin: 0 1em;
   }
+}
 
-  a {
-    transition: 0.15s ease-out;
-  }
-  a:hover {
-    filter: brightness(0.7);
-  }
+.dark_hover{
+  transition: 0.15s ease-out;
+}
+
+.dark_hover:hover {
+  filter: brightness(0.7);
+}
+
+.card{
+  box-shadow: 4px 14px 18px 0 rgba(0, 0, 0, 0.5 );
+  transition: 0.3s;
+  size: 7in 9.25in;
+  padding: 16mm 16mm;
+  margin: 3em;
+  background: white;
+  color: black;
 }
 
 /* Themes */
@@ -295,7 +303,7 @@ nav > ul > li.nav-item.has-dropdown > a {
   --gray1: #f7f8d0;
   --gray2: #b6f880;
   --gray3: #5ec72d;
-  --gray4: #3ea565;
+  --gray4: #023759;
   --gray5: #005368;
   --gray6: #003d4c;
 
