@@ -10,6 +10,7 @@ export const ScavengerButton = (props) => {
     const [left, setLeft] = useState(100);
     const [top, setTop] = useState(100);
     const [isExploding, setIsExploding] = useState(false);
+    const [scaleX, setScaleX] = useState(1);
 
     var currentBounceColour = `hsl(${Math.random() * 255}, 100%, 60%)`;
         
@@ -61,8 +62,8 @@ export const ScavengerButton = (props) => {
             v1.normalize() // normalizing our newly created instance
             
             // Update position if mouse isn't near / over button 
-            if(   positionX < mouseX + 10 && positionX > mouseX - 50
-               && positionY < mouseY + 10 && positionY > mouseY - 50){
+            if(   positionX < mouseX + 10 && positionX > mouseX - 90
+               && positionY < mouseY + 10 && positionY > mouseY - 90){
               // I can figure out how to do it not greater than
             } else {
               // borders against side of screen
@@ -193,7 +194,7 @@ export const ScavengerButton = (props) => {
             <button id="scavengerButton" 
                 style={{left: left, top: top, border:'none', background: 'none'}}
                 className={props.mode} onClick={handleClick}>
-                <svg style={{height: '40px', cursor: 'pointer', display: hidden && 'none'}} viewBox="0 0 512 512"><path fill={currentColour} d="M288 167.2v-28.1c-28.2-36.3-47.1-79.3-54.1-125.2-2.1-13.5-19-18.8-27.8-8.3-21.1 24.9-37.7 54.1-48.9 86.5 34.2 38.3 80 64.6 130.8 75.1zM400 64c-44.2 0-80 35.9-80 80.1v59.4C215.6 197.3 127 133 87 41.8c-5.5-12.5-23.2-13.2-29-.9C41.4 76 32 115.2 32 156.6c0 70.8 34.1 136.9 85.1 185.9 13.2 12.7 26.1 23.2 38.9 32.8l-143.9 36C1.4 414-3.4 426.4 2.6 435.7 20 462.6 63 508.2 155.8 512c8 .3 16-2.6 22.1-7.9l65.2-56.1H320c88.4 0 160-71.5 160-159.9V128l32-64H400zm0 96.1c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16z"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" style={{height: '80px', cursor: 'pointer', display: hidden && 'none', transform: `scaleX(${scaleX})`}}  viewBox="0 0 216.19 236.82"><path className="a" fill={currentColour} d="M729,399a5,5,0,1,1-5-5,5,5,0,0,1,5,5ZM665.28,537.83c73.06-12.26,112.4-71.45,76-111.32q4.44-11,20.14-9.55,4.47-8.4-18.58-16.34c-9.41-25.91-43.18-23.47-51.63,10.9q-28.38-35.82-65.95-51.93-7,4.5.3,51.63,21.5,2.25,31,8.95-90.9-10.43-110.65.37,57.61,72,115.35,85.8-7.25,34.82-53.42,89.24,9.74,7.81,85.35-57.6-26.05,3.43-27.9-.15Z" transform="translate(-545.9 -359.59)"/></svg>
                 <Confetti active={isExploding} config={confettiConfig} />
             </button>
         </div>

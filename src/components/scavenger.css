@@ -41,7 +41,7 @@
       margin-left: 0%;
     }
     to {
-      margin-left: calc(100vw - 40px);
+      margin-left: calc(100vw - 80px);
     }
   }
 }
@@ -50,7 +50,7 @@
     margin-top: 0%;
   }
   to {
-    margin-top: calc(100vh - 40px);
+    margin-top: calc(100vh - 80px);
   }
 }
 .bounce {
