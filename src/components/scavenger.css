@@ -1,0 +1,66 @@
+#toast-container > div {
+  opacity:1;
+}
+  
+@keyframes fade-out {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.avoid{
+    position: absolute !important;
+}
+
+.fade {
+  position: fixed !important;
+  animation-name: fade-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*  keyframes for move class  */
+@media only screen and (min-width: 601px) {
+  @keyframes hor-movement {
+    from {
+      margin-left: 0%;
+    }
+    to {
+      margin-left: calc(100vw - 52px);
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  @keyframes hor-movement {
+    from {
+      margin-left: 0%;
+    }
+    to {
+      margin-left: calc(100vw - 40px);
+    }
+  }
+}
+@keyframes ver-movement {
+  from {
+    margin-top: 0%;
+  }
+  to {
+    margin-top: calc(100vh - 40px);
+  }
+}
+.bounce {
+  z-index: 1000000;
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  animation-name: hor-movement, ver-movement;
+  animation-duration: 12.5s, 9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
