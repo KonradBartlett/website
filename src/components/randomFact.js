@@ -30,7 +30,7 @@ const facts = [
     },
     {
         image: <JohnWick/>,
-        text: 'I am a HUGE fan of Keany Reeves and especially the John Wick franchise. My online persona and usernames are often somehow related to John Wick, and I own every movie which is special because I don\' often watch TV'
+        text: 'I am a HUGE fan of Keanu Reeves and especially the John Wick franchise. My online persona and usernames are often somehow related to John Wick, and I own every movie which is special because I don\'t often watch TV'
     },
 ]
 
