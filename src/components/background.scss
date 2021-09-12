@@ -1,12 +1,112 @@
 .background{
     
-    .a{fill:var(--skyline1); transition: 1s ease-out;}
-    .b{fill:var(--skyline2); transition: 1s ease-out;}
-    .c{fill:var(--skyline3); transition: 1s ease-out;}
-    .d{fill:var(--skyline4); transition: 1s ease-out;}
-    .e{fill:var(--skyline5); transition: 1s ease-out;}
-    .f{fill:var(--skyline6); transition: 1s ease-out;}
-    .g{fill:var(--skyline7); transition: 1s ease-out;}
-    .h{fill:var(--skyline8); transition: 1s ease-out;}
+    .a{
+        z-index: -1;
+        fill:var(--skyline1); 
+        transition: 1s ease-out;
+    }
+    .b{
+        z-index: -1;
+        fill:var(--skyline2); 
+        transition: 1s ease-out;
+    }
+    .c{
+        z-index: -1;
+        fill:var(--skyline3); 
+        transition: 1s ease-out;
+    }
+    .d{
+        z-index: -1;
+        fill:var(--skyline4); 
+        transition: 1s ease-out;
+    }
+    .e{
+        z-index: -1;
+        fill:var(--skyline5); 
+        transition: 1s ease-out;
+    }
+    .f{
+        fill:var(--skyline6); 
+        transition: 1s ease-out;
+    }
+    .g{
+        fill:var(--skyline7); 
+        transition: 1s ease-out;
+    }
+    .h{
+        fill:var(--skyline8); 
+        transition: 1s ease-out;
+    }
+    .i{
+        fill:var(--sun); 
+        transition: 1s ease-out;
+    }
     .f,.g,.h{fill-rule:evenodd;}
+
+    .sky{
+        z-index: -2;
+        position: fixed;
+        transition: 5s ease-out;
+    }
+
+    .sun{
+        opacity: 1;
+        left: 5vw;
+        top: 10vh;
+        animation-name: driftY, driftX, rotate360;
+        animation-duration: 12.5s, 9s, 180s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+
+    .moon{
+        opacity: 1;
+        left: 3vw;
+        top: 100vh;
+        animation-name: driftY, driftX;
+        animation-duration: 12.5s, 9s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+
+
+
+    @keyframes rotate360 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate((180deg));
+        }
+    }
+    @keyframes driftY {
+        from {
+            margin-top: 0px;
+        }
+        to {
+            margin-top: 4px;
+        }
+    }
+    @keyframes driftX {
+        from {
+            margin-left: 0%;
+        }
+        to {
+            margin-left: 20px;
+        }
+    }
 }
+
+.dark{
+    .sun{
+        opacity: 0;
+        top: 100vh;
+    }
+    .moon{
+        opacity: 1;
+        top: 12vh;
+    }   
+}
+
