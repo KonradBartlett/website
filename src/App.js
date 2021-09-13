@@ -123,7 +123,7 @@ function App() {
         <h3>Find all the <Bird/> for a surprise! </h3>
         
                 
-        <button className="dark_hover" onClick={() => startScavenger()}>Ok</button>
+        <button className="light_hover" onClick={() => startScavenger()}>Ok</button>
       </ReactModal>
     </Router>
   );

@@ -88,7 +88,7 @@ export function Resume() {
                     <h2>EDUCATION</h2>
                     <div>
                         <div>
-                            <h4>B.Sc.H Computation and Information Systems<br/>Trent University | 2019</h4>
+                            <h4>B.Sc.H Computation and Information Systems<br/>Trent University</h4>
                             <p>
                             <b>Degree:</b> Honors Bachelor of Science<br/>
                             <b>Graduation Date:</b> 2019<br/>
@@ -100,7 +100,7 @@ export function Resume() {
                     <h2>Certificates</h2>
                     <div>
                         <div>
-                            <h4>Google IT Support Professional Certificate<br/>Google | 2021</h4>
+                            <h4>Google IT Support Professional Certificate | Google | 2021</h4>
                         </div>
                     </div>
                 </section>
