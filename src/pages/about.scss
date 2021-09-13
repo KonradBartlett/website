@@ -1,5 +1,19 @@
 .about{
-    width: 70%;
+    width: 55%;
     background: var(--bg);
     color: var(--text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .randomFact{
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    .details{
+        width: 70ch;
+        margin-right: 1em;
+        margin-bottom: auto;
+    }
 }

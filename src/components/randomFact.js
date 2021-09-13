@@ -52,11 +52,13 @@ export const RandomFact = () => {
 
     return (
         <div className="randomFact">
-            <a className="fact_button dark_hover noselect" onClick={updateFact}>Click to receive a random fact</a>
-            <div className="flex">
-                {image}
-                <p className="fact">{fact}</p>
+            <div className="innerFact">
+                <a className="fact_button dark_hover noselect" onClick={updateFact}>Click to receive a random fact</a>
+                <div className="flex">
+                    <p className="fact">{fact}</p>
+                </div>
             </div>
+            {image}
         </div>
     );
 };

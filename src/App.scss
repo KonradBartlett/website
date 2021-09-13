@@ -10,6 +10,10 @@ body {
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
+.toast-message {
+  width: 70%
+}
+
 .ReactModal__Overlay {
   display: grid;
   place-items: center;
@@ -121,6 +125,10 @@ img {
   color: #123455;
   background-color: grey;
   border: none;
+}
+
+#root > section > nav > ul > a:last-child > svg{
+  height: 40px;
 }
 
 .nav-item {
@@ -240,15 +248,14 @@ nav > ul > li.nav-item.has-dropdown > a {
 .dark_hover{
   transition: 0.15s ease-out;
 }
-.dark{  
-  .dark_hover:hover {
-    filter: brightness(0.7);
-  }
+.dark_hover:hover {
+  filter: brightness(0.7);
 }
-.light{  
-  .dark_hover:hover {
-    filter:  opacity(0.5);
-  }
+.light_hover{
+  transition: 0.15s ease-out;
+}
+.light_hover:hover {
+  filter: brightness(1.3);
 }
 
 .card{
@@ -256,11 +263,26 @@ nav > ul > li.nav-item.has-dropdown > a {
   transition: 0.3s;
   size: 7in 9.25in;
   padding: 16mm 16mm;
-  margin: 3em;
+  margin: 2em;
   background: white;
   color: black;
 }
 
+.dark{
+  .fact_image{
+    fill: var(--text)
+  }
+  
+
+}
+.light{
+  .fact_image{
+    fill: var(--border-color)
+    
+  }
+  
+
+}
 /* Themes */
 
 :root {
