@@ -41,7 +41,160 @@
         fill:var(--sun); 
         transition: 1s ease-out;
     }
-    .f,.g,.h{fill-rule:evenodd;}
+    .f,.g,.h{
+        fill-rule:evenodd;
+        z-index: 2;
+        position: relative;
+    }
+    .scape{
+        z-index: 2;
+        position: relative;
+        width: 100vw;
+        min-width: 1000px;
+    }
+    .mountain{
+        z-index: -1;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        min-width: 1000px;
+    }
+    
+    .cloud{
+        position: fixed;
+        z-index: 0;
+        animation-name: moveAcross;
+        animation-duration: 280s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        width: 90px;
+        stroke: var(--cloud);
+        fill: var(--cloud);
+    }
+    @keyframes moveAcross {
+        0% {
+            left: -300px;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+    .cloud1{
+        top: 60vh;
+        animation-delay: -10s;
+    }
+    .cloud2{
+        top: 70vh;
+        animation-delay: -0s;
+    }
+    .cloud3{
+        top: 50vh;
+        animation-delay: -30s;
+    }
+    .cloud4{
+        top: 40vh;
+        animation-delay: -40s;
+    }
+    .cloud5{
+        top: 60vh;
+        animation-delay: -50s;
+    }
+    .cloud6{
+        top: 80vh;
+        animation-delay: -60s;
+    }
+    .cloud7{
+        top: 60vh;
+        animation-delay: -70s;
+    }
+    .cloud8{
+        top: 40vh;
+        animation-delay: -80s;
+    }
+    .cloud9{
+        top: 50vh;
+        animation-delay: -90s;
+    }
+    .cloud10{
+        top: 40vh;
+        animation-delay: -100s;
+    }
+    .cloud11{
+        top: 60vh;
+        animation-delay: -110s;
+    }
+    .cloud12{
+        top: 30vh;
+        animation-delay: -120s;
+    }
+    .cloud13{
+        top: 70vh;
+        animation-delay: -130s;
+    }
+    .cloud14{
+        top: 80vh;
+        animation-delay: -140s;
+    }
+    .cloud15{
+        top: 50vh;
+        animation-delay: -270s;
+    }
+    .cloud16{
+        top: 40vh;
+        animation-delay: -160s;
+    }
+    .cloud17{
+        top: 80vh;
+        animation-delay: -270s;
+    }
+    .cloud18{
+        top: 50vh;
+        animation-delay: -55s;
+    }
+    .cloud19{
+        top: 60vh;
+        animation-delay: -215s;
+    }
+    .cloud20{
+        top: 80vh;
+        animation-delay: -25s;
+    }
+    .cloud21{
+        top: 60vh;
+        animation-delay: -115s;
+    }
+    .cloud22{
+        top: 40vh;
+        animation-delay: -235s;
+    }
+    .cloud23{
+        top: 50vh;
+        animation-delay: -145s;
+    }
+    .cloud24{
+        top: 60vh;
+        animation-delay: -155s;
+    }
+    .cloud25{
+        top: 40vh;
+        animation-delay: -165s;
+    }
+    .cloud26{
+        top: 80vh;
+        animation-delay: -175s;
+    }
+    .cloud27{
+        top: 60vh;
+        animation-delay: -185s;
+    }
+    .cloud28{
+        top: 50vh;
+        animation-delay: -245s;
+    }
+    .cloud29{
+        top: 80vh;
+        animation-delay: -255s;
+    }
 
     .sky{
         z-index: -2;
