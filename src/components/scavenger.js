@@ -211,6 +211,6 @@ export const ScavengerButton = (props) => {
 
   
 export const startScavenger = () => {
-    localStorage.setItem('konradScavenger', JSON.stringify([0,0,0,0,0]))
+    localStorage.setItem('konradScavenger', JSON.stringify([0,0,0,0]))
     window.location.reload();
 };
