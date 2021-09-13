@@ -81,8 +81,8 @@ function App() {
                   <Link className="nav-item dark_hover" to="/">Home</Link>
                   <Link className="nav-item dark_hover" to="/about">About</Link>
                   <Link className="nav-item dark_hover" to="/resume">Resume</Link>
-                  {/* <Link className="nav-item dark_hover" to="/projects">Projects</Link>
-                  <Link className="nav-item dark_hover" to="/portfolio">Portfolio</Link> */}
+                  <Link className="nav-item dark_hover" to="/projects">Projects</Link>
+                  {/* <Link className="nav-item dark_hover" to="/portfolio">Portfolio</Link> */}
       
                   <div className="veritcal-row"></div>
                   <li className="nav-item dark_hover has-dropdown" title="Toggle theme" onClick={toggleTheme}>

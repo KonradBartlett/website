@@ -7,7 +7,7 @@ export function Resume() {
     
     return (
         <div className="page resume">
-            <ScavengerButton colour="red" index="2" mode="avoid"/>
+            <ScavengerButton colour="grey" index="2" mode="avoid"/>
             <div className="card cv">
 
 

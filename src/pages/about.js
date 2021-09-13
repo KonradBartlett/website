@@ -6,7 +6,7 @@ export function About() {
     document.title = "About - Konrad Bartlett"
     return (
         <div className="page">
-            <ScavengerButton colour="rainbow" index="0" mode="bounce"/>
+            <ScavengerButton colour="rainbow" index="0" mode="fade"/>
             <div className="card about">
                 <h2>About Me</h2>
                 <RandomFact />
