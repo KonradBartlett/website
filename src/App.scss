@@ -17,6 +17,7 @@ body {
 }
 
 .ReactModal__Content {
+  display: grid;
   color: var(--text) !important;
   background: var(--bg-modal) !important;
   text-align: center;
@@ -59,11 +60,21 @@ a {
 
 header {
   padding: 1em;
-  clip-path: polygon(100% 0, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0 0);
-  background: var(--bg-header);
+  background: var(--bg-nav);
+  border: 2px solid var(--border-color);
   margin-bottom: 1em;
-  padding-bottom: 3.5em;
+  padding-bottom: 2.5em;
   text-align: center;
+  margin-left: 65%;
+
+  .links {
+    display: flex;
+    justify-content: center;
+    a{    
+      padding: 1em;
+    }
+  }
+
 }
 
 main {
@@ -229,9 +240,15 @@ nav > ul > li.nav-item.has-dropdown > a {
 .dark_hover{
   transition: 0.15s ease-out;
 }
-
-.dark_hover:hover {
-  filter: brightness(0.7);
+.dark{  
+  .dark_hover:hover {
+    filter: brightness(0.7);
+  }
+}
+.light{  
+  .dark_hover:hover {
+    filter:  opacity(0.5);
+  }
 }
 
 .card{
