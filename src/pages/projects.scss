@@ -1,3 +1,9 @@
 .projects{
     width: 70vw;
+    background: var(--bg);
+    color: var(--text);
+
+    h3{
+        display: contents;
+    }
 }
