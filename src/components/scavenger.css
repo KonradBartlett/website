@@ -12,10 +12,12 @@
 }
 
 .avoid{
+  z-index: 1000000;
     position: absolute !important;
 }
 
 .fade {
+  z-index: 1000000;
   position: fixed !important;
   animation-name: fade-out;
   animation-duration: 2s;
