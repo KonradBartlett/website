@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import toastr, { options } from "toastr";
-import './scavenger.css';
+import './scavenger.scss';
 import { Fireworks } from 'fireworks-js';
 import Confetti from 'react-dom-confetti';
 
