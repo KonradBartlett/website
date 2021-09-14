@@ -1,0 +1,87 @@
+.portfolio{
+    background: var(--bg);
+    color: var(--text);
+
+    h3{
+        display: contents;
+    }
+
+    #linus{
+        background-image: url('../assets/lttstore.png');
+
+    }
+
+    .container{
+        overflow: hidden;
+    }
+
+    .cell{
+        display: grid;
+        place-items: center;
+        border: 2px solid var(--border-color);
+        height: 30em;
+        transform: scale(1,1);
+        transition: 0.15s ease-out;
+
+        .image{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/placeholder.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h2{
+            background: var(--bg);
+            opacity: 0.8;
+            padding: 1em 2em;
+        }
+        p{
+            max-width: 40ch;
+            position: absolute;
+            background: var(--bg);
+            opacity: 0;
+            padding: 1em 2em;
+        }
+    }
+    
+    .cell:hover{
+        transform: scale(1.1,1.1);
+
+        h2{
+            opacity: 0;
+        }
+        p{
+            opacity: 1;
+            transform: scale(0.9,0.9);
+        }
+    }
+    
+// desktop
+@media (min-width: 1070px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(240px, 1fr));
+        gap: 1em;
+    }
+
+  }
+
+  @media (max-width: 1069px){
+      .grid{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 1em;
+      }
+  
+    }
+  
+  // phone
+  @media (max-width: 639px){
+      .cell{
+          margin-bottom: 1em;
+      }
+  }
+}
+

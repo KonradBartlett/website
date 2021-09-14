@@ -65,8 +65,8 @@ function App() {
                   <Link className="nav-item dark_hover large" to="/">Home</Link>
                   <Link className="nav-item dark_hover large" to="/about">About</Link>
                   <Link className="nav-item dark_hover large" to="/resume">Resume</Link>
-                  <Link className="nav-item dark_hover large" to="/projects">Projects</Link>
-                  {/* <Link className="nav-item dark_hover" to="/portfolio">Portfolio</Link> */}
+                  {/* <Link className="nav-item dark_hover large" to="/projects">Projects</Link> */}
+                  <Link className="nav-item dark_hover large" to="/portfolio">Portfolio</Link>
       
                   <div className="veritcal-row large"></div>
                   <li className="nav-item dark_hover has-dropdown large" title="Toggle theme" onClick={toggleTheme}>
@@ -90,7 +90,8 @@ function App() {
             <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/">Home</Link>
             <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/about">About</Link>
             <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/resume">Resume</Link>
-            <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/projects">Projects</Link>
+            {/* <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/projects">Projects</Link> */}
+            <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/portfolio">Portfolio</Link>
             <li className="nav-item dark_hover has-dropdown small" title="Toggle theme" onClick={toggleTheme}>
                 <a href="#" className="small">{themeText}</a>
             </li>
