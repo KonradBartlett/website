@@ -124,6 +124,7 @@ img {
 /* Navbar */
 
 .navbar {
+  z-index: 2;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -156,8 +157,8 @@ img {
   border: none;
 }
 
-#root > section > nav > ul > a:last-child > svg{
-  height: 40px;
+#nav-bird{
+  width: 40px;
 }
 
 .nav-item {
@@ -436,4 +437,70 @@ nav > ul > li.nav-item.has-dropdown > a {
 
 body > div.ReactModalPortal > div > div > h3 > svg {
   height: 40px;
+}
+
+// desktop
+@media (min-width: 640px){
+  .small {
+    display: none;
+    visibility: hidden;
+  }
+  .large{
+    visibility: visible;
+  }
+}
+
+// phone
+@media (max-width: 639px){
+  .small {
+    visibility: visible;
+  }
+  .large{
+    display: none;
+    visibility: hidden;
+  }
+
+  .page{
+    width: auto;
+    margin: 0;
+    padding: 6em 0;
+  }
+
+  .card{
+    padding: 6mm;
+    margin: 0;
+  }
+
+  header{
+    margin-left: 0;
+    margin-bottom: 80vh;
+    width: auto;
+  }
+
+  .menu{
+    top: -100vh;
+    z-index: -1;
+    
+    height: 94vh;
+    width: 100vw;
+    position: fixed;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.30s ease-out;
+
+    li{
+      width: 100%;
+      margin-top: 60%;
+      border-top: 2px solid var(--border-color); 
+      font-size: 4rem;
+      height: 7rem;
+    }
+  }
+
+  .show_menu{
+    z-index: 1;
+    top: 6em;
+  }
 }

@@ -17,6 +17,7 @@ import Modal from 'react-modal';
 import ReactModal from 'react-modal';
 import { Footer } from './components/footer';
 import {ReactComponent as Bird} from './assets/bird.svg';
+import {ReactComponent as Menu} from './assets/menu.svg';
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
   const [isSolar, setSolar] = useState(localStorage.getItem('isSolar'));
   const [solarize, setSolarize] = useState(localStorage.getItem('isSolar') ? 'normalize' : 'solarize');
   const [modalOpen, setModalIsOpen] = useState(false);
-  const [themeText, setThemeText] = useState(localStorage.getItem('theme')  == 'light' ? '🌙' : '🌤️')
+  const [themeText, setThemeText] = useState(localStorage.getItem('theme')  == 'light' ? '🌙' : '🌤️');
+  const [showMenu, setShowMenu] = useState('');
 
   useEffect(() => {
     if(theme != undefined){
@@ -46,46 +48,28 @@ function App() {
     document.body.className = theme == 'light' ? 'dark solar' : 'light';
   }
 
-  // const darkButton = () => {
-  //   document.body.className = isSolar ? 'dark solar' : 'dark';
-  //   setTheme('dark');
-  //   localStorage.setItem('theme', 'dark');
-  // };
-  
-  // const lightButton = () => {
-  //   document.body.className = isSolar ? 'light solar' : 'light';
-  //   setTheme('light');
-  //   localStorage.setItem('theme', 'light');
-  // };
-  
-  // const solarButton = () => {
-  //   if (isSolar) {
-  //     document.body.className = theme == 'light' ? 'light' : 'dark';
-  //     setSolar(false);
-  //     setSolarize('solarize');
-  //     localStorage.removeItem('isSolar');
-  //   } else {
-  //     document.body.className = theme == 'light' ? 'light solar' : 'dark solar';
-  //     setSolar(true);
-  //     setSolarize('normalize');
-  //     localStorage.setItem('isSolar', true);
-  //   }
-  // };
+  const toggleMenu = () => {
+    setShowMenu(showMenu == '' ? 'show_menu' : '');
+  }
+
+  const scrollToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
 
   return (
     <Router>
       <section style={{'minHeight': '100vh'}}>
           <nav className="navbar">
               <ul className="navbar-nav">
-              <h2 className="header">Konrad Bartlett</h2>
-                  <Link className="nav-item dark_hover" to="/">Home</Link>
-                  <Link className="nav-item dark_hover" to="/about">About</Link>
-                  <Link className="nav-item dark_hover" to="/resume">Resume</Link>
-                  <Link className="nav-item dark_hover" to="/projects">Projects</Link>
+                <h2 className="header large">Konrad Bartlett</h2>
+                  <Link className="nav-item dark_hover large" to="/">Home</Link>
+                  <Link className="nav-item dark_hover large" to="/about">About</Link>
+                  <Link className="nav-item dark_hover large" to="/resume">Resume</Link>
+                  <Link className="nav-item dark_hover large" to="/projects">Projects</Link>
                   {/* <Link className="nav-item dark_hover" to="/portfolio">Portfolio</Link> */}
       
-                  <div className="veritcal-row"></div>
-                  <li className="nav-item dark_hover has-dropdown" title="Toggle theme" onClick={toggleTheme}>
+                  <div className="veritcal-row large"></div>
+                  <li className="nav-item dark_hover has-dropdown large" title="Toggle theme" onClick={toggleTheme}>
                       <a href="#">{themeText}</a>
                       {/* <ul className="dropdown">
                           <li className="dropdown-item"><a id="light" href="#" onClick={() => lightButton()}>light</a></li>
@@ -93,9 +77,24 @@ function App() {
                           <li className="dropdown-item"><a id="solar" href="#" onClick={() => solarButton()}>{solarize}</a></li>
                       </ul> */}
                   </li>
-                  <a  className="nav-item dark_hover" href="#" onClick={() => {setModalIsOpen(true)}}><Bird/></a>
+                  <a id="nav-bird" className="nav-item dark_hover large" href="#" onClick={() => {setModalIsOpen(true)}}><Bird/></a>
+
+
+              {/* mobile */}
+                <h2 className="header small">KB</h2>
+                <Menu className="small has-dropdown" onClick={() => {setShowMenu(showMenu == '' ? 'show_menu' : '')}}/>
               </ul>
+
           </nav>
+          <div className={`menu small  ${showMenu}`}>
+            <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/">Home</Link>
+            <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/about">About</Link>
+            <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/resume">Resume</Link>
+            <Link className="nav-item dark_hover small" onClick={() => {toggleMenu(); scrollToTop()}} to="/projects">Projects</Link>
+            <li className="nav-item dark_hover has-dropdown small" title="Toggle theme" onClick={toggleTheme}>
+                <a href="#" className="small">{themeText}</a>
+            </li>
+          </div>
       
           <Switch>
             <Route path="/about">

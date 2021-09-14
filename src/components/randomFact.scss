@@ -1,33 +1,77 @@
-.randomFact{
-    border: 2px solid var(--border-color);
-    border-radius: 9px;
-    padding: 2em;
-    height: 100%;
-    .innerFact{
-        display: flex;
-        align-items: center;
-    }
-    .fact{
-        display: flex;
-        align-items: center;
-        max-width: 60ch;
-        height: 4em;
-        border-left: 2px solid var(--border-color);
-        padding-left: 1em;
-        margin: 0 1em;
-    }
-    .fact_button {
-        background: var(--bg);
-        color: var(--text);
-        padding: 1em 2em;
-        border-radius: 9px;
+
+
+
+// desktop
+@media (min-width: 640px){
+    .randomFact{
         border: 2px solid var(--border-color);
-        cursor: pointer;
-        margin-right: auto;
+        border-radius: 9px;
+        padding: 2em;
+        height: 100%;
+        .innerFact{
+            display: flex;
+            align-items: center;
+        }
+        .fact{
+            display: flex;
+            align-items: center;
+            max-width: 60ch;
+            height: 4em;
+            border-left: 2px solid var(--border-color);
+            padding-left: 1em;
+            margin: 0 1em;
+        }
+        .fact_button {
+            background: var(--bg);
+            color: var(--text);
+            padding: 1em 2em;
+            border-radius: 9px;
+            border: 2px solid var(--border-color);
+            cursor: pointer;
+            margin-right: auto;
+        }
+        svg{
+            padding-top: 3em;
+            width: 100%;
+            height: 22em;
+        }
     }
-    svg{
-        padding-top: 3em;
-        width: 100%;
-        height: 22em;
+  }
+  
+  // phone
+  @media (max-width: 639px){
+    .randomFact{
+        border: 2px solid var(--border-color);
+        border-radius: 9px;
+        padding: 2em;
+        height: 100%;
+        .innerFact{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fact{
+            // display: flex;
+            // align-items: center;
+            max-width: 60ch;
+            height: 4em;
+            border-top: 2px solid var(--border-color);
+            padding-top: 1em;
+            margin: 2em 1em;
+        }
+        .fact_button {
+            background: var(--bg);
+            color: var(--text);
+            padding: 1em 2em;
+            border-radius: 9px;
+            border: 2px solid var(--border-color);
+            cursor: pointer;
+            margin-right: auto;
+        }
+        svg{
+            padding-top: 10em;
+            width: 100%;
+            // height: 22em;
+        }
     }
-}
+  }
