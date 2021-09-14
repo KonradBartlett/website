@@ -63,6 +63,7 @@ a {
 }
 
 header {
+  width: 20em;
   padding: 1em;
   background: var(--bg-nav);
   border: 2px solid var(--border-color);
@@ -79,6 +80,34 @@ header {
     }
   }
 
+}
+
+.header:hover {
+  animation: color-rotate 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes color-rotate {
+  16%{
+    color: red;
+  }
+  32%{
+    color: orange;
+  }
+  48%{
+    color: yellow;
+  }
+  64%{
+    color: greenyellow;
+  }
+  80%{
+    color: var(--blue);
+  }
+  100%{
+    color: var(--purple);
+  }
 }
 
 main {
@@ -376,20 +405,6 @@ nav > ul > li.nav-item.has-dropdown > a {
 
 /* Logo Animation */
 
-@keyframes color-rotate {
-  from {
-    filter: hue-rotate(0deg);
-  }
-  to {
-    filter: hue-rotate(360deg);
-  }
-}
-
-.header:hover {
-  animation: color-rotate 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
 
 .flex{
   display: flex;
