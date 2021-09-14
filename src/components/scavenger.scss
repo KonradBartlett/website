@@ -1,15 +1,6 @@
 #toast-container > div {
   opacity:1;
 }
-  
-@keyframes fade-out {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
 
 .avoid{
   z-index: 1000000;
@@ -18,12 +9,21 @@
 
 .fade {
   position: absolute !important;
-  // z-index: 1000000;
-  // animation-name: fade-out;
-  // animation-duration: 2s;
-  // animation-iteration-count: infinite;
-  // animation-direction: alternate;
-  // animation-timing-function: linear;
+  z-index: 1000000;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+  
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 /*  keyframes for move class  */
