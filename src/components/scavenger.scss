@@ -10,14 +10,15 @@
 .fade {
   position: absolute !important;
   z-index: 1000000;
-  animation-name: fade;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+  // animation-name: fade_out;
+  // animation-duration: 2s;
+  // animation-iteration-count: infinite;
+  // animation-direction: alternate;
+  // animation-timing-function: linear;
+  -webkit-animation: fade_out 2s alternate infinite ease-in-out;
 }
   
-@keyframes fade {
+@keyframes fade_out {
   0% {
     opacity: 0%;
   }
