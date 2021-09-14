@@ -53,7 +53,7 @@ export const RandomFact = () => {
     return (
         <div className="randomFact">
             <div className="innerFact">
-                <a className="fact_button dark_hover noselect" onClick={updateFact}>Click to receive a random fact</a>
+                <a className="fact_button dark_hover noselect" onClick={updateFact}>Fun fact</a>
                 <div className="flex">
                     <p className="fact">{fact}</p>
                 </div>
