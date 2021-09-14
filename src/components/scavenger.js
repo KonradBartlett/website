@@ -20,12 +20,12 @@ export const ScavengerButton = (props) => {
       var interval1, interval2, colourInverval = '';
     // set movement mode
     if(props.mode == 'fade'){
-        // const fadePosition = () => {
-            // setLeft(`${Math.floor(Math.random() * 90 + 5)}vw`);
-            // setTop(`${Math.floor(Math.random() *  90 + 5)}vh`);
-        // }
-        // fadePosition();
-        // interval1 = setInterval(fadePosition, 4000);
+        const fadePosition = () => {
+            setLeft(`${Math.floor(Math.random() * 90 + 5)}vw`);
+            setTop(`${Math.floor(Math.random() *  90 + 5)}vh`);
+        }
+        fadePosition();
+        interval1 = setInterval(fadePosition, 4000);
     } else if(props.mode == 'avoid'){
          
           var mouseX;
