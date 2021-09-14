@@ -99,8 +99,8 @@ export const ScavengerButton = (props) => {
           }
       
           changeColour();
-          interval1 = setInterval(changeColour, 12500);
-          interval2 = setInterval(changeColour, 9000);
+          interval1 = setInterval(changeColour, 8500);
+          interval2 = setInterval(changeColour, 4000);
         }
 
     // set colour of icon

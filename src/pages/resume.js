@@ -42,9 +42,9 @@ export function Resume() {
                                 <ProgressBar completed={83} isLabelVisible={false} bgColor="#7fc356"/>
                             </summary>
                             <p>
-                                Being a Professional front end developer I spend a large portion of my time staring at CSS, modifying and tweaking properties until I get the element looking just right. 
-                                I prefer to use SCSS files over plan CSS for the extra flexibility and efficiency that it offers when creating style sheets. 
-                                I love finding tutorials online todo novel things like animations, or really standard things as efficiently as possible. 
+                                Being a professional front end developer I spend a large portion of my time staring at CSS, modifying and tweaking properties until I get the element looking just right. 
+                                I prefer to use SCSS files over plain CSS for the extra flexibility and efficiency that it offers when creating style sheets. 
+                                I love finding tutorials online to do novel things like animations, or really standard things as efficiently as possible. 
                             </p>
                         </details>
                         <details>
@@ -76,9 +76,9 @@ export function Resume() {
                                 <ProgressBar completed={50} isLabelVisible={false} bgColor="#f47938"/>
                             </summary>
                             <p>
-                                I have created Features, Apps, and Themes for Shopify professionally for a media company for a while now. 
+                                I have created Snippets, Apps, and Themes for Shopify professionally for a media company for a while now. 
                                 Shopify development is something that I am still getting the hang of, however the more I learn the more I am finding Shopify to be a robust and enjoyable platform to develop for. 
-                                I write my Features using Preact, my Apps using Apollo GraphQL and NodeJS, and my Themes using Liquid however I am excited for Shopify to finally release their 'Hydrogen' theme which promises to be a theme that entirely uses React and TypeScript.
+                                I write my Snippets using Preact, my Apps using Apollo GraphQL and NodeJS, and my Themes using Liquid however I am excited for Shopify to finally release their 'Hydrogen' theme which promises to be a theme that entirely uses React and TypeScript.
                             </p>
                         </details>
                     </div>
@@ -137,7 +137,7 @@ export function Resume() {
                             ASP.NET, Angular, Microsoft NAV
                         </h4>
                         <ul>
-                            <li>Created enterlirise applications for a engineering firm, including the creation of custom AutoCAD plugins and applications used for project management.</li>
+                            <li>Created enterprise applications for an engineering firm, including the creation of custom AutoCAD plugins and applications used for project management.</li>
                             <li>Interact with key stakeholders to do requirement specification on projects and develop software that was right for them</li>
                         </ul>
                     </div>
