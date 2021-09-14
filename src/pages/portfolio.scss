@@ -33,11 +33,13 @@
         }
 
         h2{
+            pointer-events : none;
             background: var(--bg);
             opacity: 0.8;
             padding: 1em 2em;
         }
         p{
+            pointer-events : none;
             max-width: 40ch;
             position: absolute;
             background: var(--bg);
