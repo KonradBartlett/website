@@ -25,7 +25,7 @@ export const ScavengerButton = (props) => {
             setTop(`${Math.floor(Math.random() *  90 + 5)}vh`);
         }
         fadePosition();
-        interval1 = setInterval(fadePosition, 4000);
+        interval1 = setInterval(fadePosition, 2000);
     } else if(props.mode == 'avoid'){
          
           var mouseX;
