@@ -21,8 +21,8 @@ export const ScavengerButton = (props) => {
     // set movement mode
     if(props.mode == 'fade'){
         const fadePosition = () => {
-            setLeft(`${Math.floor(Math.random() * 90 + 5)}vw`);
-            setTop(`${Math.floor(Math.random() *  90 + 5)}vh`);
+            // setLeft(`${Math.floor(Math.random() * 90 + 5)}vw`);
+            // setTop(`${Math.floor(Math.random() *  90 + 5)}vh`);
         }
         fadePosition();
         interval1 = setInterval(fadePosition, 4000);
