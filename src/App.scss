@@ -221,9 +221,10 @@ nav > ul > li.nav-item.has-dropdown > a {
 }
 
 .page {
-  padding: 6em;
-  display: grid;
-  place-items: center;
+  padding: 6em 6vw;
+  width: 86vw;
+  // display: grid;
+  // place-items: center;
 }
 
 .footer {
