@@ -11,6 +11,7 @@ export const ScavengerButton = (props) => {
     const [top, setTop] = useState(100);
     const [isExploding, setIsExploding] = useState(false);
     const [scaleX, setScaleX] = useState(1);
+    const [rainbow, setRainbow] = useState(' ')
 
     var currentBounceColour = `hsl(${Math.random() * 255}, 100%, 60%)`;
         
@@ -105,44 +106,44 @@ export const ScavengerButton = (props) => {
     // set colour of icon
     if(props.colour && props.mode != 'bounce'){
         if(props.colour == 'rainbow'){
-    
-          const getRandomColour = () => {
-            return {r: Math.random()*255, g: Math.random()*255, b:Math.random()*255}
-          }
+          setRainbow(' rainbow')
+          // const getRandomColour = () => {
+          //   return {r: Math.random()*255, g: Math.random()*255, b:Math.random()*255}
+          // }
               
-          const lerp = (a, b, u) => {
-              return (1 - u) * a + u * b;
-          };
+          // const lerp = (a, b, u) => {
+          //     return (1 - u) * a + u * b;
+          // };
           
-          const fade = (start, end, duration) => {
-              var interval = 10;
-              var steps = duration / interval;
-              var step_u = 1.0 / steps;
-              var u = 0.0;
-              var theInterval = setInterval(function() {
-                  if (u >= 1.0) {
-                      clearInterval(theInterval);
-                  }
-                  var r = Math.round(lerp(start.r, end.r, u));
-                  var g = Math.round(lerp(start.g, end.g, u));
-                  var b = Math.round(lerp(start.b, end.b, u));
-                  var colorname = 'rgb(' + r + ',' + g + ',' + b + ')';
-                  setCurrentColour(colorname);
-                  u += step_u;
-              }, interval);
-          };
+          // const fade = (start, end, duration) => {
+          //     var interval = 10;
+          //     var steps = duration / interval;
+          //     var step_u = 1.0 / steps;
+          //     var u = 0.0;
+          //     var theInterval = setInterval(function() {
+          //         if (u >= 1.0) {
+          //             clearInterval(theInterval);
+          //         }
+          //         var r = Math.round(lerp(start.r, end.r, u));
+          //         var g = Math.round(lerp(start.g, end.g, u));
+          //         var b = Math.round(lerp(start.b, end.b, u));
+          //         var colorname = 'rgb(' + r + ',' + g + ',' + b + ')';
+          //         setCurrentColour(colorname);
+          //         u += step_u;
+          //     }, interval);
+          // };
           
-          var start = getRandomColour();
-          var end = getRandomColour();
+          // var start = getRandomColour();
+          // var end = getRandomColour();
           
-          const setRandomColour = () => {
-            start = end;
-            end = getRandomColour();
-            fade(start, end, 500);
-          };
+          // const setRandomColour = () => {
+          //   start = end;
+          //   end = getRandomColour();
+          //   fade(start, end, 500);
+          // };
     
-          setRandomColour();
-          colourInverval = setInterval(setRandomColour, 500);
+          // setRandomColour();
+          // colourInverval = setInterval(setRandomColour, 500);
         }
       }
 
@@ -201,7 +202,7 @@ export const ScavengerButton = (props) => {
             <button id="scavengerButton" 
                 style={{left: left, top: top, border:'none', background: 'none'}}
                 className={props.mode} onClick={handleClick}>
-                  <svg xmlns="http://www.w3.org/2000/svg" style={{height: '80px', cursor: 'pointer', display: hidden && 'none', transform: `scaleX(${scaleX})`}}  viewBox="0 0 216.19 236.82"><path className="a" fill={currentColour} d="M729,399a5,5,0,1,1-5-5,5,5,0,0,1,5,5ZM665.28,537.83c73.06-12.26,112.4-71.45,76-111.32q4.44-11,20.14-9.55,4.47-8.4-18.58-16.34c-9.41-25.91-43.18-23.47-51.63,10.9q-28.38-35.82-65.95-51.93-7,4.5.3,51.63,21.5,2.25,31,8.95-90.9-10.43-110.65.37,57.61,72,115.35,85.8-7.25,34.82-53.42,89.24,9.74,7.81,85.35-57.6-26.05,3.43-27.9-.15Z" transform="translate(-545.9 -359.59)"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className={rainbow} style={{height: '80px', cursor: 'pointer', display: hidden && 'none', transform: `scaleX(${scaleX})`}}  viewBox="0 0 216.19 236.82"><path className="a" fill={currentColour} d="M729,399a5,5,0,1,1-5-5,5,5,0,0,1,5,5ZM665.28,537.83c73.06-12.26,112.4-71.45,76-111.32q4.44-11,20.14-9.55,4.47-8.4-18.58-16.34c-9.41-25.91-43.18-23.47-51.63,10.9q-28.38-35.82-65.95-51.93-7,4.5.3,51.63,21.5,2.25,31,8.95-90.9-10.43-110.65.37,57.61,72,115.35,85.8-7.25,34.82-53.42,89.24,9.74,7.81,85.35-57.6-26.05,3.43-27.9-.15Z" transform="translate(-545.9 -359.59)"/></svg>
                 <Confetti active={isExploding} config={confettiConfig} />
             </button>
         </div>

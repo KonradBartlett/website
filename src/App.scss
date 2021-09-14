@@ -88,25 +88,31 @@ header {
   animation-direction: alternate;
 }
 
+.rainbow{
+  animation: color-rotate 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
 
 @keyframes color-rotate {
   16%{
-    color: red;
+    fill: red;
   }
   32%{
-    color: orange;
+    fill: orange;
   }
   48%{
-    color: yellow;
+    fill: yellow;
   }
   64%{
-    color: greenyellow;
+    fill: greenyellow;
   }
   80%{
-    color: var(--blue);
+    fill: var(--blue);
   }
   100%{
-    color: var(--purple);
+    fill: var(--purple);
   }
 }
 
