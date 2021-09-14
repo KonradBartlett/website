@@ -83,7 +83,7 @@ header {
 }
 
 .header:hover {
-  animation: color-rotate 1s;
+  animation: color-rotate 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -98,21 +98,27 @@ header {
 @keyframes color-rotate {
   16%{
     fill: red;
+    color: red;
   }
   32%{
     fill: orange;
+    color: orange;
   }
   48%{
     fill: yellow;
+    color: yellow;
   }
   64%{
     fill: greenyellow;
+    color: greenyellow;
   }
   80%{
     fill: var(--blue);
+    color: var(--blue);
   }
   100%{
     fill: var(--purple);
+    color: var(--purple);
   }
 }
 
