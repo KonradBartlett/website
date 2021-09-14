@@ -417,3 +417,7 @@ nav > ul > li.nav-item.has-dropdown > a {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gray5);
 }
+
+body > div.ReactModalPortal > div > div > h3 > svg {
+  height: 40px;
+}
