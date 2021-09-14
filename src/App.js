@@ -58,7 +58,7 @@ function App() {
 
   return (
     <Router>
-      <section style={{'minHeight': '100vh'}}>
+      <main style={{'minHeight': '100vh'}}>
           <nav className="navbar">
               <ul className="navbar-nav">
                 <h2 className="header large">Konrad Bartlett</h2>
@@ -115,7 +115,7 @@ function App() {
             </Route>
           </Switch>
 
-      </section>
+      </main>
       <Footer />
       <Background/>
       <div className="fireworks" />
