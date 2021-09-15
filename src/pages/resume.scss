@@ -32,7 +32,8 @@
     }
 
     .resume_button{
-        background: white;
+        background: var(--bg);
+        color: var(--text);
         margin-bottom: 2em;
         padding: 1em 2em;
         border-radius: 9px;
