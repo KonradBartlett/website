@@ -18,3 +18,14 @@
         }
     }
 }
+
+
+// phone
+@media (max-width: 639px){
+  #home{
+    header{
+      margin-left: 0;
+      width: calc(100vw - 2em - 4px);
+    }
+  }
+}
