@@ -24,6 +24,7 @@
       background: var(--bg);
       padding: 3px;
       border-radius: 3px;
+      transition: 0.25s ease-out;
     }
     a:hover {
       filter: invert(1);
