@@ -21,11 +21,12 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="#"><div className="cell">
-                            <div id="" className="image dark_hover" />
-                            <h2>Placeholder</h2>
+                        <a href="https://sunshinecoastdogs.com/" target="_blank"><div className="cell">
+                            <div id="dogs" className="image dark_hover" />
+                            <h2>Doggy Daycare</h2>
                             <p>
-                                A placeholder tile for a future project
+                                Doggy Daycare is a sample project used to practice my craft.<br/><br/>
+                                Doggy Daycare uses React and is hosted on GCP.<br/><br/> 
                             </p>
                         </div></a>
                     </div>
