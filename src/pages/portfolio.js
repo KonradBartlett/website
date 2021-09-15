@@ -26,7 +26,8 @@ export function Portfolio() {
                             <h2>Doggy Daycare</h2>
                             <p>
                                 Doggy Daycare is a sample project used to practice my craft.<br/><br/>
-                                Doggy Daycare uses React and is hosted on GCP.<br/><br/> 
+                                Doggy Daycare uses React and is hosted on GCP. During this project I was focused on creating everything from scratch and making the interface responsive from the start.<br/><br/> 
+                                While I used my standard project layout / design pattern while creating this website, I found lots of ways to improve my current workflow and optomise development for the future.
                             </p>
                         </div></a>
                     </div>

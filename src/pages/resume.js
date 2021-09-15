@@ -32,8 +32,8 @@ export function Resume() {
                             <p className="detail_blurb">
                                 React is my preferred Javascript framework. 
                                 I use React for all of my personal projects if possible as well as at work. 
-                                I used to be a huge Angular fan boy however I got a work position that required that I work in React, and I haven't looked back since. 
-                                I have several years of experience using React professionally, as well for personal projects and I consider myself to be quite skilled in developing with it.
+                                While I used to be a huge Angular fan boy however I got a work position that required that I work in React, and I haven't looked back since. 
+                                Having several years of experience using React professionally, as well for personal projects and I consider myself to be quite skilled at developing with it.
                             </p>
                         </details>
                         <details>
@@ -43,8 +43,8 @@ export function Resume() {
                             </summary>
                             <p>
                                 Being a professional front end developer I spend a large portion of my time staring at CSS, modifying and tweaking properties until I get the element looking just right. 
-                                I prefer to use SCSS files over plain CSS for the extra flexibility and efficiency that it offers when creating style sheets. 
-                                I love finding tutorials online to do novel things like animations, or really standard things as efficiently as possible. 
+                                My preference is to use SCSS files over plain CSS for the extra flexibility and efficiency that it offers when creating style sheets. 
+                                It is really enjoyable to me to find online tutorials to do novel things like animations, or really standard things like centering elements as efficiently as possible. 
                             </p>
                         </details>
                         <details>
@@ -67,7 +67,8 @@ export function Resume() {
                                 Angular is the first Javascript framework that I used to create professional web applications. 
                                 When I got my first position as a web developer the company that I worked for required the use of Angular as the framework for the front end of applications. 
                                 It was the first time I had really dug into and used Javascript to it's fullest potential and I really fell in love and adopted Angular as my favourite framework for a while. 
-                                I used to ask for Angular project textbooks for Christmas that would provide hundreds of pages of content outlining and walking through different web applications that could be made using Angular and I learned a great deal from following along. 
+                                Thinking back, I can remeber that I used to ask for Angular project textbooks for Christmas that would provide hundreds of pages of content outlining and walking through different 
+                                    web applications that could be made using Angular and I learned a great deal from following along. 
                             </p>
                         </details>
                         <details>
@@ -76,9 +77,10 @@ export function Resume() {
                                 <ProgressBar completed={50} isLabelVisible={false} bgColor="#f47938"/>
                             </summary>
                             <p>
-                                I have created Snippets, Apps, and Themes for Shopify professionally for a media company for a while now. 
+                                My current position requires that I create Snippets, Apps, and Themes using Shopify for a while now. 
                                 Shopify development is something that I am still getting the hang of, however the more I learn the more I am finding Shopify to be a robust and enjoyable platform to develop for. 
-                                I write my Snippets using Preact, my Apps using Apollo GraphQL and NodeJS, and my Themes using Liquid however I am excited for Shopify to finally release their 'Hydrogen' theme which promises to be a theme that entirely uses React and TypeScript.
+                                I write my Snippets using Preact, my Apps using Apollo, GraphQL, and NodeJS, and my Themes using Liquid however I am excited for Shopify to finally release their 'Hydrogen' theme 
+                                    which promises to be a theme that entirely uses React and TypeScript.
                             </p>
                         </details>
                     </div>

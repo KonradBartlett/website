@@ -14,7 +14,7 @@ const facts = [
     },
     {
         image: <Dota/>,
-        text: 'I am extremely good at a videogame called Dota 2, I used to be rank #1 in the world with a character named Undying and I have friends who play in massive Dota tournaments for millions of dollars'
+        text: 'The videogame that I have played the most (5,000+ hours) is called Dota 2, I used to be rank #1 in the world with a character named Undying and I have friends who play in massive Dota tournaments for millions of dollars'
     },
     {
         image: <Data/>,
@@ -22,15 +22,16 @@ const facts = [
     },
     {
         image: <Bird/>,
-        text: 'I have a beautiful bird named Simon, he is a blue linnie and he is my best friend. He often imitates the sound of a keyboard and mouse, and if you make clicking noises at him he will click back'
+        text: 'My pet is a beautiful bird named Simon, he is a blue linnie and he is my best friend. He often imitates the sound of a keyboard and mouse, and if you make clicking noises at him he will click back'
     },
     {
         image: <Yeezy/>,
-        text: 'I collect and own several designer sneakers. My most expensive pair is a pair of Yeezy Slides that are colour way that is extremely rare and hard to come by'
+        text: 'A fun hobby of mine is to collect and own several designer sneakers. My most expensive pair is a pair of Yeezy Slides that are colour way that is extremely rare and hard to come by'
     },
     {
         image: <JohnWick/>,
-        text: 'I am a HUGE fan of Keanu Reeves and especially the John Wick franchise. My online persona and usernames are often somehow related to John Wick, and I own every movie which is special because I don\'t often watch TV'
+        text: `Ever since I watched the trailer for John Wick 3 I became a HUGE fan of Keanu Reeves and especially the John Wick franchise. 
+                My online persona and usernames are often somehow related to John Wick, and I own every movie which is special because I don't often watch TV`
     },
 ]
 
