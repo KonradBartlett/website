@@ -1,12 +1,27 @@
 import { ScavengerButton } from '../components/scavenger';
 import './resume.scss';
 import ProgressBar from "@ramonak/react-progress-bar";
+import { motion } from 'framer-motion';
 
 export function Resume() {
     document.title = "Resume - Konrad Bartlett"
     
     return (
-        <div className="page resume">
+        <motion.div     
+            initial={{ 
+                x: '-50vw',
+                opacity: 0
+            }}
+            animate={{ 
+                x: 100,
+                opacity: 1
+            }}
+            exit={{ 
+                y: '100vh',
+                opacity: 0
+            }}
+            transition={{ duration: 0.3 }}
+            className="page resume">
             <ScavengerButton colour="rainbow" index="2" mode="avoid"/>
             <div className="card cv">
 
@@ -146,6 +161,6 @@ export function Resume() {
                 </section>
 
             </div>
-        </div>
+        </motion.div>
     );
 }

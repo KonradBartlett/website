@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router,
+  useLocation,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import ReactModal from 'react-modal';
+import { AnimatePresence } from 'framer-motion';
+
 import { About } from './pages/about';
 import { Projects } from './pages/projects';
 import { Home } from './pages/home';
@@ -12,7 +15,6 @@ import { Resume } from './pages/resume';
 import { startScavenger } from './components/scavenger';
 import { Background } from './components/background';
 import { Portfolio } from './pages/portfolio';
-import ReactModal from 'react-modal';
 import { Footer } from './components/footer';
 
 import {ReactComponent as Bird} from './assets/bird.svg';
@@ -22,6 +24,7 @@ import {ReactComponent as Menu} from './assets/menu.svg';
 import './app.scss';
 
 function App() {
+  const location = useLocation();
 
   // Apply the cached theme on reload
   const [theme, setTheme] = useState(localStorage.getItem('theme'));
@@ -56,7 +59,6 @@ function App() {
   }
 
   return (
-    <Router>
       <main style={{'minHeight': '100vh'}}>
           <nav className="navbar">
               <ul className="navbar-nav">
@@ -91,7 +93,8 @@ function App() {
             </li>
           </div>
       
-          <Switch>
+      <AnimatePresence exitBeforeEnter initial={false}>
+          <Switch location={location} key={location.pathname}>
             <Route path="/about">
               <About />
             </Route>
@@ -108,18 +111,17 @@ function App() {
               <Home />
             </Route>
           </Switch>
+          </AnimatePresence>
 
-      </main>
-      <Footer />
+          <Footer />
       <Background/>
       <div className="fireworks" />
       <ReactModal isOpen={modalOpen}>
         <h3>Find all the <Bird/> for a surprise! </h3>
-        
-                
         <button className="light_hover" onClick={() => startScavenger()}>Ok</button>
       </ReactModal>
-    </Router>
+      </main>
+
   );
 }
 

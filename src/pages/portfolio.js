@@ -1,10 +1,25 @@
+import { motion } from "framer-motion";
 import { ScavengerButton } from "../components/scavenger";
 import './portfolio.scss';
 
 export function Portfolio() {
     document.title = "Portfolio - Konrad Bartlett"
     return (
-        <div className="page">
+        <motion.div     
+            initial={{ 
+                x: '-50vw',
+                opacity: 0
+            }}
+            animate={{ 
+                x: 100,
+                opacity: 1
+            }}
+            exit={{ 
+                y: '100vh',
+                opacity: 0
+            }}
+            transition={{ duration: 0.3 }}
+            className="page">
         <ScavengerButton index="3" colour="rainbow" mode="fade" />
             <div className="card portfolio">
                 <h2>Portfolio</h2>
@@ -69,6 +84,6 @@ export function Portfolio() {
                     </div>
                 </section>
             </div>
-        </div>
+        </motion.div>
     );
 }

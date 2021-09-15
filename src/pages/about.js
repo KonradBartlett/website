@@ -3,10 +3,26 @@ import { ScavengerButton } from "../components/scavenger";
 import { ReactComponent as Cocktail } from '../assets/cocktail.svg';
 import './about.scss';
 
+import { motion } from 'framer-motion';
+
 export function About() {
     document.title = "About - Konrad Bartlett"
     return (
-        <div className="page">
+        <motion.div 
+            initial={{ 
+                x: '-50vw',
+                opacity: 0
+            }}
+            animate={{ 
+                x: 100,
+                opacity: 1
+            }}
+            exit={{ 
+                y: '100vh',
+                opacity: 0
+            }}
+            transition={{ duration: 0.3 }}
+            className="page">
             <ScavengerButton colour="pink" index="0" mode="fade"/>
             <div className="card about">
                 <div className="details">
@@ -29,6 +45,6 @@ export function About() {
                 </div>
                 <RandomFact className="bottom"/>
             </div>
-        </div>
+        </motion.div>
     );
 }

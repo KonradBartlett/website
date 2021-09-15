@@ -1,9 +1,24 @@
+import { motion } from 'framer-motion';
 import './projects.scss';
 
 export function Projects() {
     document.title = "Projects - Konrad Bartlett"
     return (
-        <div className="page">
+        <motion.div     
+            initial={{ 
+                x: '-50vw',
+                opacity: 0
+            }}
+            animate={{ 
+                x: 100,
+                opacity: 1
+            }}
+            exit={{ 
+                y: '100vh',
+                opacity: 0
+            }}
+            transition={{ duration: 0.3 }}
+            className="page">
             <div className="card projects">
                 <h1>Projects</h1>
                 Coming soon
@@ -13,7 +28,7 @@ export function Projects() {
                     <Reviews/>
                 </details> */}
             </div>
-        </div>
+        </motion.div>
         
     );
 }
