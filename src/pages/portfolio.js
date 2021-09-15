@@ -10,7 +10,7 @@ export function Portfolio() {
                 <h2>Portfolio</h2>
                 <section class="grid">
                     <div class="container">
-                        <a href="https://www.lttstore.com/" target="_blank"><div className="cell">
+                        <a href="https://www.lttstore.com/" target="_blank" rel="noreferrer"><div className="cell">
                             <div id="linus" className="image dark_hover" />
                             <h2>LTT Store</h2>
                             <p>
@@ -21,7 +21,7 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="https://sunshinecoastdog.com/" target="_blank"><div className="cell">
+                        <a href="https://sunshinecoastdog.com/" target="_blank" rel="noreferrer"><div className="cell">
                             <div id="dogs" className="image dark_hover" />
                             <h2>Doggy Daycare</h2>
                             <p>
@@ -31,7 +31,7 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="#"><div className="cell">
+                        <a href="#!"><div className="cell">
                             <div id="" className="image dark_hover" />
                             <h2>Placeholder</h2>
                             <p>
@@ -40,7 +40,7 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="#"><div className="cell">
+                        <a href="#!"><div className="cell">
                             <div id="" className="image dark_hover" />
                             <h2>Placeholder</h2>
                             <p>
@@ -49,7 +49,7 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="#"><div className="cell">
+                        <a href="#!"><div className="cell">
                             <div id="" className="image dark_hover" />
                             <h2>Placeholder</h2>
                             <p>
@@ -58,7 +58,7 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="#"><div className="cell">
+                        <a href="#!"><div className="cell">
                             <div id="" className="image dark_hover" />
                             <h2>Placeholder</h2>
                             <p>

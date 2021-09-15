@@ -2,6 +2,8 @@ import {ReactComponent as Github} from '../assets/github.svg';
 import {ReactComponent as Linkedin} from '../assets/linkedin.svg';
 import {ReactComponent as RickRoll} from '../assets/rick.svg';
 
+import './footer.scss';
+
 export const Footer = () => {
     return (
         <div className="footer">

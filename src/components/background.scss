@@ -1,4 +1,9 @@
 .background{
+    position: fixed;
+    bottom: -4px;
+    width: 100vw;
+    min-width: 1000px;
+    z-index: -1;
     
     .a{
         z-index: -1;

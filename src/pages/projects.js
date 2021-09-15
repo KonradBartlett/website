@@ -1,6 +1,4 @@
-import { ScavengerButton } from "../components/scavenger";
 import './projects.scss';
-import { Reviews } from "./projects/reviews";
 
 export function Projects() {
     document.title = "Projects - Konrad Bartlett"

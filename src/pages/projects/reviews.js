@@ -1,9 +1,8 @@
 
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './reviews.scss';
 
 export const Reviews = () => {
-    const [data, setData] = useState({})
 
     useEffect(() => {
       }, []);

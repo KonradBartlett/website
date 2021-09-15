@@ -1,32 +1,29 @@
 import { useEffect, useState } from "react";
-import toastr, { options } from "toastr";
+import toastr from "toastr";
 import './scavenger.scss';
 import { Fireworks } from 'fireworks-js';
 import Confetti from 'react-dom-confetti';
 
 export const ScavengerButton = (props) => { 
-    const [hidden, setHidden] = useState(localStorage.getItem('konradScavenger') != null ? JSON.parse(localStorage.getItem('konradScavenger'))[props.index] == 1 : true);
+    const [hidden, setHidden] = useState(localStorage.getItem('konradScavenger') !== null ? JSON.parse(localStorage.getItem('konradScavenger'))[props.index] === 1 : true);
     const [currentColour, setCurrentColour] = useState(props.colour);
     const [left, setLeft] = useState(100);
     const [top, setTop] = useState(100);
     const [isExploding, setIsExploding] = useState(false);
-    const [scaleX, setScaleX] = useState(1);
     const [rainbow, setRainbow] = useState(' ')
-
-    var currentBounceColour = `hsl(${Math.random() * 255}, 100%, 60%)`;
         
     useEffect(() => {
 
       var interval1, interval2, colourInverval = '';
     // set movement mode
-    if(props.mode == 'fade'){
+    if(props.mode === 'fade'){
         const fadePosition = () => {
             setLeft(`${Math.floor(Math.random() * 90 + 5)}vw`);
             setTop(`${Math.floor(Math.random() *  90 + 5)}vh`);
         }
         fadePosition();
         interval1 = setInterval(fadePosition, 2000);
-    } else if(props.mode == 'avoid'){
+    } else if(props.mode === 'avoid'){
          
           var mouseX;
           var mouseY;
@@ -91,11 +88,10 @@ export const ScavengerButton = (props) => {
       
           avoidMouse();
           interval1 = setInterval(avoidMouse, 2);
-        } else if(props.mode == 'bounce'){
+        } else if(props.mode === 'bounce'){
           
           const changeColour = () => {
-            currentBounceColour = `hsl(${Math.random() * 255}, 100%, 60%)`;
-            setCurrentColour(currentBounceColour);
+            setCurrentColour(`hsl(${Math.random() * 255}, 100%, 60%)`);
           }
       
           changeColour();
@@ -104,8 +100,8 @@ export const ScavengerButton = (props) => {
         }
 
     // set colour of icon
-    if(props.colour && props.mode != 'bounce'){
-        if(props.colour == 'rainbow'){
+    if(props.colour && props.mode !== 'bounce'){
+        if(props.colour === 'rainbow'){
           setRainbow(' rainbow')
           // const getRandomColour = () => {
           //   return {r: Math.random()*255, g: Math.random()*255, b:Math.random()*255}
@@ -152,7 +148,7 @@ export const ScavengerButton = (props) => {
         clearInterval(interval2);
         clearInterval(colourInverval);
       }
-    },[])
+    },[props.colour, props.mode])
         
     const handleClick = (e) => {    
       // update the array in localstorage based on the passed index of the button
@@ -164,9 +160,9 @@ export const ScavengerButton = (props) => {
       localStorage.setItem('konradScavenger', JSON.stringify(scavengerCurrent));
      
       // display a popup notifying the user of their progress or if they have completed the hunt
-      var count = JSON.parse(localStorage.getItem('konradScavenger')).filter(x => x == 1).length;
+      var count = JSON.parse(localStorage.getItem('konradScavenger')).filter(x => x === 1).length;
       var total = JSON.parse(localStorage.getItem('konradScavenger')).length;
-      if(count == total){
+      if(count === total){
         toastr.success('Congratulations! You have completed my scavenger hunt!');
 
         const container = document.querySelector('.fireworks')
@@ -192,7 +188,7 @@ export const ScavengerButton = (props) => {
       width: "10px",
       height: "10px",
       perspective: "649px",
-      colors: props.colour == 'rainbow' && props.mode != 'bounce'? ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"] : [currentColour]
+      colors: props.colour === 'rainbow' && props.mode !== 'bounce'? ["#a864fd", "#29cdff", "#78ff44", "#ff718d", "#fdff6a"] : [currentColour]
     };
 
     
@@ -202,7 +198,7 @@ export const ScavengerButton = (props) => {
             <button id="scavengerButton" 
                 style={{left: left, top: top, border:'none', background: 'none'}}
                 className={props.mode} onClick={handleClick}>
-                  <svg xmlns="http://www.w3.org/2000/svg" className={rainbow} style={{height: '80px', cursor: 'pointer', display: hidden && 'none', transform: `scaleX(${scaleX})`}}  viewBox="0 0 216.19 236.82"><path className="a" fill={currentColour} d="M729,399a5,5,0,1,1-5-5,5,5,0,0,1,5,5ZM665.28,537.83c73.06-12.26,112.4-71.45,76-111.32q4.44-11,20.14-9.55,4.47-8.4-18.58-16.34c-9.41-25.91-43.18-23.47-51.63,10.9q-28.38-35.82-65.95-51.93-7,4.5.3,51.63,21.5,2.25,31,8.95-90.9-10.43-110.65.37,57.61,72,115.35,85.8-7.25,34.82-53.42,89.24,9.74,7.81,85.35-57.6-26.05,3.43-27.9-.15Z" transform="translate(-545.9 -359.59)"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className={rainbow} style={{height: '80px', cursor: 'pointer', display: hidden && 'none'}}  viewBox="0 0 216.19 236.82"><path className="a" fill={currentColour} d="M729,399a5,5,0,1,1-5-5,5,5,0,0,1,5,5ZM665.28,537.83c73.06-12.26,112.4-71.45,76-111.32q4.44-11,20.14-9.55,4.47-8.4-18.58-16.34c-9.41-25.91-43.18-23.47-51.63,10.9q-28.38-35.82-65.95-51.93-7,4.5.3,51.63,21.5,2.25,31,8.95-90.9-10.43-110.65.37,57.61,72,115.35,85.8-7.25,34.82-53.42,89.24,9.74,7.81,85.35-57.6-26.05,3.43-27.9-.15Z" transform="translate(-545.9 -359.59)"/></svg>
                 <Confetti active={isExploding} config={confettiConfig} />
             </button>
         </div>
