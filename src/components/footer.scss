@@ -13,8 +13,19 @@
       justify-content: center;
       margin-bottom: 1em;
     }
-  
+    
     svg {
       margin: 0 1em;
     }
-  }
+}
+  
+.out{
+    a{
+      background: var(--bg);
+      padding: 3px;
+      border-radius: 3px;
+    }
+    a:hover {
+      filter: invert(1);
+    }
+}

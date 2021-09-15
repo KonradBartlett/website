@@ -1,0 +1,20 @@
+#home{
+    header {
+        width: 20em;
+        padding: 1em;
+        background: var(--bg-nav);
+        border: 2px solid var(--border-color);
+        margin-bottom: 90vh;
+        padding-bottom: 2.5em;
+        text-align: center;
+        margin-left: 65%;
+      
+        .links {
+          display: flex;
+          justify-content: center;
+          a{    
+            padding: 1em;
+          }
+        }
+    }
+}

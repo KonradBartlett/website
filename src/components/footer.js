@@ -14,7 +14,7 @@ export const Footer = () => {
 
 export const Links = () => {
     return (
-        <div>
+        <div className="out">
             <div className="links">
                 <a className="dark_hover" href="https://github.com/konradbartlett" target="_blank" rel="noopener noreferrer nofollow">
                     <Github/>
@@ -28,6 +28,5 @@ export const Links = () => {
             </div>
             <a className="dark_hover" href="mailto:Konrad.Bartlett@Outlook.com" target="_blank" rel="noopener noreferrer nofollow">Konrad.Bartlett@Outlook.com</a>
         </div>
-    )
-
-}
+    );
+};
