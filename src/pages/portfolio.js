@@ -21,7 +21,7 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="https://sunshinecoastdogs.com/" target="_blank"><div className="cell">
+                        <a href="https://sunshinecoastdog.com/" target="_blank"><div className="cell">
                             <div id="dogs" className="image dark_hover" />
                             <h2>Doggy Daycare</h2>
                             <p>
