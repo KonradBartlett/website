@@ -18,18 +18,21 @@
 
     .container{
         overflow: hidden;
+        border-radius: 11px;
+        border: 2px solid var(--border-color);
     }
 
     .cell{
         display: grid;
         place-items: center;
-        border: 2px solid var(--border-color);
+        border-radius: 9px;
         height: 30em;
         transform: scale(1,1);
         transition: 0.15s ease-out;
 
         .image{
             position: absolute;
+            border-radius: 9px;
             height: 100%;
             width: 100%;
             background-image: url('../assets/placeholder.jpg');
