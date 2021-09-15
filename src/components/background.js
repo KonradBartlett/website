@@ -17,35 +17,35 @@ export const Background = () =>
             <Sun/>
             <Mountain/>
             <City/>
-            <Cloud1 className="cloud1 cloud"/>
-            <Cloud2 className="cloud2 cloud"/>
-            <Cloud3 className="cloud3 cloud"/>
-            <Cloud4 className="cloud4 cloud"/>
-            <Cloud5 className="cloud5 cloud"/>
-            <Cloud1 className="cloud6 cloud"/>
-            <Cloud2 className="cloud7 cloud"/>
-            <Cloud3 className="cloud8 cloud"/>
-            <Cloud4 className="cloud9 cloud"/>
-            <Cloud5 className="cloud10 cloud"/>
-            <Cloud1 className="cloud11 cloud"/>
-            <Cloud2 className="cloud12 cloud"/>
-            <Cloud3 className="cloud13 cloud"/>
-            <Cloud4 className="cloud14 cloud"/>
-            <Cloud5 className="cloud15 cloud"/>
-            <Cloud1 className="cloud16 cloud"/>
-            <Cloud2 className="cloud17 cloud"/>
-            <Cloud3 className="cloud18 cloud"/>
-            <Cloud4 className="cloud19 cloud"/>
-            <Cloud5 className="cloud20 cloud"/>
-            <Cloud1 className="cloud21 cloud"/>
-            <Cloud2 className="cloud22 cloud"/>
-            <Cloud3 className="cloud23 cloud"/>
-            <Cloud1 className="cloud24 cloud"/>
-            <Cloud2 className="cloud25 cloud"/>
-            <Cloud3 className="cloud26 cloud"/>
-            <Cloud4 className="cloud27 cloud"/>
-            <Cloud5 className="cloud28 cloud"/>
-            <Cloud3 className="cloud29 cloud"/>
+            <Cloud1 className="speed1 cloud1 cloud"/>
+            <Cloud2 className="speed2 cloud2 cloud"/>
+            <Cloud3 className="speed3 cloud3 cloud"/>
+            <Cloud4 className="speed1 cloud4 cloud"/>
+            <Cloud5 className="speed2 cloud5 cloud"/>
+            <Cloud1 className="speed3 cloud6 cloud"/>
+            <Cloud2 className="speed1 cloud7 cloud"/>
+            <Cloud3 className="speed2 cloud8 cloud"/>
+            <Cloud4 className="speed3 cloud9 cloud"/>
+            <Cloud5 className="speed1 cloud10 cloud"/>
+            <Cloud1 className="speed2 cloud11 cloud"/>
+            <Cloud2 className="speed3 cloud12 cloud"/>
+            <Cloud3 className="speed1 cloud13 cloud"/>
+            <Cloud4 className="speed2 cloud14 cloud"/>
+            <Cloud5 className="speed3 cloud15 cloud"/>
+            <Cloud1 className="speed1 cloud16 cloud"/>
+            <Cloud2 className="speed2 cloud17 cloud"/>
+            <Cloud3 className="speed3 cloud18 cloud"/>
+            <Cloud4 className="speed1 cloud19 cloud"/>
+            <Cloud5 className="speed2 cloud20 cloud"/>
+            <Cloud1 className="speed3 cloud21 cloud"/>
+            <Cloud2 className="speed1 cloud22 cloud"/>
+            <Cloud3 className="speed2 cloud23 cloud"/>
+            <Cloud1 className="speed3 cloud24 cloud"/>
+            <Cloud2 className="speed1 cloud25 cloud"/>
+            <Cloud3 className="speed2 cloud26 cloud"/>
+            <Cloud4 className="speed3 cloud27 cloud"/>
+            <Cloud5 className="speed1 cloud28 cloud"/>
+            <Cloud3 className="speed2 cloud29 cloud"/>
 
         </div>
 

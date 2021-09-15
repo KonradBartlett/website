@@ -68,14 +68,32 @@
     .cloud{
         position: fixed;
         z-index: 0;
-        animation-name: moveAcross;
-        animation-duration: 280s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
         width: 90px;
         stroke: var(--cloud);
         fill: var(--cloud);
     }
+    .speed1{
+        animation-name: moveAcross;
+        animation-duration: 200s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+    .speed2{
+        animation-name: moveAcross;
+        animation-duration: 280s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+    speed3{
+        animation-name: moveAcross;
+        animation-duration: 360s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+
     @keyframes moveAcross {
         0% {
             left: -300px;
