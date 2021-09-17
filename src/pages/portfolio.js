@@ -53,9 +53,8 @@ export function Portfolio() {
                             <h2>Sunshine Coast Dogs</h2>
                             <p>
                                 Sunshine Coast Dogs is the 2nd version of the Doggy Daycare site.<br/><br/>
-                                Sunshine Coast Dogs still uses React and is hosted on GCP. The goal of this project was to create a website with a focus design first, functinality second.<br/><br/>
-                                From the start I was working on making the website look asthetically pleasing and just adding fun features like a custom cursor, and scroll bar that contribute to the visuals of the website but not the layout.<br/><br/>
-                                I am currently working on Sunshine Coast Dogs so I will do a post mortem later.
+                                Sunshine Coast Dogs still uses React and is hosted on GCP. The goal of this project was to create a website with a focus design first, functionality second.<br/><br/>
+                                From the start I was working on making the website look asthetically pleasing and just adding fun features like a custom cursor, and scroll bar that contribute to the visuals of the website but not the layout or content.
                             </p>
                         </div></a>
                     </div>
