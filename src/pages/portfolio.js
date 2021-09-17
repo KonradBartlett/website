@@ -36,23 +36,26 @@ export function Portfolio() {
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="https://sunshinecoastdog.com/" target="_blank" rel="noreferrer"><div className="cell">
+                        <a href="https://old.sunshinecoastdog.com/" target="_blank" rel="noreferrer"><div className="cell">
                             <div id="dogs" className="image dark_hover" />
-                            <h2>Doggy Daycare</h2>
+                            <h2>Doggy Daycare | Draft</h2>
                             <p>
                                 Doggy Daycare is a sample project used to practice my craft.<br/><br/>
                                 Doggy Daycare uses React and is hosted on GCP. During this project I was focused on creating everything from scratch and making the interface responsive from the start.<br/><br/> 
-                                The content on the cards might as well but placeholder, it's all low effort and non-interesting. The part that I really put effort into was the page layout and navigation.<br/><br/> 
+                                I wasn't a fan of the layout or content so I quickly finished it and started to work on a second version.<br/><br/> 
                                 While I used my standard project layout / design pattern while creating this website, I found lots of ways to improve my current workflow and optomise development for the future.
                             </p>
                         </div></a>
                     </div>
                     <div class="container">
-                        <a href="#!"><div className="cell">
-                            <div id="" className="image dark_hover" />
-                            <h2>Placeholder</h2>
+                        <a href="https://sunshinecoastdog.com/" target="_blank" rel="noreferrer"><div className="cell">
+                            <div id="dogs2" className="image dark_hover" />
+                            <h2>Sunshine Coast Dogs</h2>
                             <p>
-                                A placeholder tile for a future project
+                                Sunshine Coast Dogs is the 2nd version of the Doggy Daycare site.<br/><br/>
+                                Sunshine Coast Dogs still uses React and is hosted on GCP. The goal of this project was to create a website with a focus design first, functinality second.<br/><br/>
+                                From the start I was working on making the website look asthetically pleasing and just adding fun features like a custom cursor, and scroll bar that contribute to the visuals of the website but not the layout.<br/><br/>
+                                I am currently working on Sunshine Coast Dogs so I will do a post mortem later.
                             </p>
                         </div></a>
                     </div>
