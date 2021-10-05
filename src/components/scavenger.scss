@@ -5,6 +5,9 @@
 .avoid{
   z-index: 1000000;
     position: absolute !important;
+    svg{
+      transform: translateX(-100px);
+    }
 }
 
 .fade {
