@@ -26,7 +26,6 @@ export const Links = () => {
                     <RickRoll/>
                 </a>
             </div>
-            <a className="dark_hover" href="mailto:Konrad.Bartlett@Outlook.com" target="_blank" rel="noopener noreferrer nofollow">Konrad.Bartlett@Outlook.com</a>
         </div>
     );
 };
