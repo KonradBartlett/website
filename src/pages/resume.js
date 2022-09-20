@@ -28,7 +28,6 @@ export function Resume() {
 
                 <section className="header">
                     <h1>Konrad Bartlett</h1>
-                    <a className="resume_button dark_hover" href="./documents/KonradBartlett_Resume.pdf" rel="noopener noreferrer" target="_blank">Download Resume</a>
                 </section>
                 <hr/>
                 <section className="top">
