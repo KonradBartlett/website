@@ -25,10 +25,6 @@ const facts = [
         text: 'My pet is a beautiful bird named Simon, he is a blue linnie and he is my best friend. He often imitates the sound of a keyboard and mouse, and if you make clicking noises at him he will click back'
     },
     {
-        image: <Yeezy/>,
-        text: 'A fun hobby of mine is to collect and own several designer sneakers. My most expensive pair is a pair of Yeezy Slides that are colour way that is extremely rare and hard to come by'
-    },
-    {
         image: <JohnWick/>,
         text: `Ever since I watched the trailer for John Wick 3 I became a HUGE fan of Keanu Reeves and especially the John Wick franchise. 
                 My online persona and usernames are often somehow related to John Wick, and I own every movie which is special because I don't often watch TV`
