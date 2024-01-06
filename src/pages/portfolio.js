@@ -25,6 +25,17 @@ export function Portfolio() {
                 <h2>Portfolio</h2>
                 <section class="grid">
                     <div class="container">
+                        <a href="https://konradandmaggie.love/" target="_blank" rel="noreferrer"><div className="cell">
+                            <div id="wedding" className="image dark_hover" />
+                            <h2>Konrad & Maggie Wedding</h2>
+                            <p>
+                                My fiance and I got married in June 2024! We needed a wedding website and I figured instead of paying a website builder for one, I would design, code, and host one myself.<br/><br/>
+                                The website uses Vanilla HTML, CSS, and very little JS in order to avoid over complicating an otherwise very simple site. I focused on using lots of modern CSS to ensure the website is as accessible and visually appealing as possible.                                
+                            </p>
+                        </div></a>
+                    </div>
+                    <div class="container">
+                    <div class="container">
                         <a href="https://www.lttstore.com/" target="_blank" rel="noreferrer"><div className="cell">
                             <div id="linus" className="image dark_hover" />
                             <h2>LTT Store</h2>
